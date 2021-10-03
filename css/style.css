@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root{
+    --primary-color:#ffbf00;
+    --secondary-color:rgba(97, 97, 63, 0.849);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+.header{
+    max-width: 670px;
+    margin: auto;
+    text-align: center;
+    background-color:var(--primary-color);
+    color: white;
+    margin-bottom: 2rem;
+}
+.container-center {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  background: linear-gradient(to bottom, var(--primary-color) 0%, white 100%);
+  
+  color: var(--secondary-color);
+  padding: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+.img {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+
+#txt-input,
+#output-msg {
+  border: 2px solid var(--secondary-color);
+  display: block;
+  width: 80%;
+  height: 25vh;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 23px;
+  margin: auto;
+
+}
+
+textarea::placeholder {
+  font-size: 20px;
+}
+
+.info-msg {
+  text-align: center;
+  margin: 1rem;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+#btn-translate {
+  display: block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--secondary-color);
+  font-size: 1.3rem;
+  margin: 2rem auto;
+  cursor: pointer;
+}
+
+/** Footer **/
+.footer{
+    background: linear-gradient(to bottom, white 0%, var(--primary-color) 100%);
+    color: var(--secondary-color);
+    font-weight: 400;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 17px;
+    text-align: center;
+    display: block;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: x-large;
+}
+.footer ul{
+    padding-inline-start: 0px;
+}
+.list-non-bullet{
+    list-style: none;
+}
+.link{
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    margin: 1rem 0rem;
+    color:white;
+}
+
+.list-item-inline{
+    display: inline-block;
+}
