@@ -2,7 +2,7 @@ let btnTranslate = document.querySelector("#btn-translate");
 let textInput = document.querySelector("#txt-input");
 let outputMsg = document.querySelector("#output-msg");
 
-var serverURL = "https://api.funtranslations.com/translate/draconio.json";
+var serverURL = "https://api.funtranslations.com/translate/thuum.json";
 
 function constructUrl(inputText) {
   return serverURL + "?" + "text=" + inputText;
@@ -20,9 +20,7 @@ function clickHandler() {
 
   fetch(constructUrl(inputText))
     .then((response) => response.json())
-    .then((json) => {
-      outputMsg.innerText = json.contents.translated;
-    })
+    .then((json) =>outputMsg.innerText = json.contents.translated)
     .catch(errorHandler);
 }
 
